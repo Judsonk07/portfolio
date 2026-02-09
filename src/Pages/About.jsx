@@ -1,4 +1,4 @@
-import React, { useEffect, memo, useMemo } from "react";
+import { useEffect, memo, useMemo } from "react";
 import {
   FileText,
   Code,
@@ -131,7 +131,7 @@ const AboutPage = () => {
       localStorage.getItem("certificates") || "[]"
     );
 
-    const startDate = new Date("2021-11-06");
+    const startDate = new Date("03/12/2025");
     const today = new Date();
     const experience =
       today.getFullYear() -
@@ -255,7 +255,7 @@ const AboutPage = () => {
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="" className="w-full lg:w-auto">
+              <a href="/Judson_K_Resume.pdf" download className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
@@ -288,7 +288,7 @@ const AboutPage = () => {
         </a>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%,
           100% {
